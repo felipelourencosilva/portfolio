@@ -1,3 +1,46 @@
-body{
-  background-color: #FFF;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  margin: auto 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 90px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+
+  height: 60px;
+  width: 60%;
+
+  border: 1px solid #9B9B9B;
+  border-radius: 30px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-around;
+
+  list-style-type: none;
+  width: 100%;
+  padding-left: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #484848;
+}
+
+#inicio {
+  height: calc(100vh - 90px);
+  background-image: url("./images/imagem-inicio.jpg");
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
