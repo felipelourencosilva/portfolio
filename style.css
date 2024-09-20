@@ -172,7 +172,7 @@ main > div {
 
 #habilidades {
   margin: auto 20vw;
-  height: 70vh;
+  height: 60vh;
 }
 
 #habilidades h2{
@@ -198,7 +198,7 @@ main > div {
   height: 320px;
 
   border-radius: 5px;
-  transition-duration: 0.5s;
+  transition-duration: 0.3s;
 }
 
 .circle {
@@ -211,6 +211,118 @@ main > div {
 }
 
 .habilidades-card:hover {
-  transform: translateY(-30px);
+  transform: translateY(-20px);
   cursor: pointer;
+}
+
+#experiencia {
+  margin: auto 20vw;
+  height: 70vh;
+}
+
+#experiencia > div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 80%;
+  width: 100%;
+
+  margin-top: 80px;
+}
+
+.experiencia-cards{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 80%;
+}
+
+.experiencia-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+
+  padding: 15px 12px;
+
+  height: 180px;
+  width: 300px;
+
+  border: 1px solid #252525;
+  border-radius: 5px;
+
+  transition: 0.3s;
+}
+
+.experiencia-cargo h4{
+  font-weight: 600;
+}
+
+.experiencia-cargo p{
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.experiencia-descricao p{
+  font-size: 12px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+.experiencia-linguagens{
+  width: 75%;
+}
+
+.experiencia-linguagens ul{
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 0px 5px;
+
+  font-size: 11px;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.experiencia-card img {
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+}
+
+.experiencia-card:first-of-type {
+  margin-bottom: 40px;
+  align-self: flex-end;
+}
+
+.experiencia-card:last-of-type {
+  margin-top: 40px;
+  align-self: flex-start;
+}
+
+.experiencia-card:hover {
+  cursor: pointer;
+  transform: translateY(-20px);
+}
+
+.experiencia-line {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(0deg, rgba(114,44,138,0) 0%, rgba(198,197,197,1) 28%, rgba(198,197,197,1) 72%, rgba(29,29,29,0) 100%);
+}
+
+.line-circle {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+
+  background: #fff;
+  border: 2px solid #252525;
 }
