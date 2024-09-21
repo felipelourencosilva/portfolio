@@ -12,7 +12,7 @@ html {
 
 h2 {
   font-family: "Merriweather", serif;
-  font-weight: 400;
+  font-weight: 300;
   font-style: italic;
   font-size: 40px;
 }
@@ -32,6 +32,7 @@ nav {
   height: 60px;
   width: 60%;
   min-width: 400px;
+  padding: 0 40px 0 40px;
 
   border: 1px solid #9B9B9B;
   border-radius: 30px;
@@ -54,6 +55,7 @@ nav a {
   font-family: "Merriweather", serif;
   font-weight: 400;
   font-style: italic;
+  font-size: 15px;
 }
 
 nav a:hover {
@@ -103,8 +105,8 @@ main > div {
   align-items: center;
   justify-content: center;
 
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
 
   background-color: hsla(0, 0%, 100%, 0.7);
   border: 1px solid #C4C3C3;
@@ -125,9 +127,9 @@ main > div {
 
 #sobre {
   height: 90vh;
-  margin: auto 20vw;
+  padding: 0 20vw 0 20vw;
 
-  box-shadow: 0px -80px 120px #ffffff;
+  box-shadow: 0px -100px 100px #fff;
 
   display: flex;
   align-items: center;
@@ -142,7 +144,7 @@ main > div {
 
 .sobre-info p{
   margin-top: 25px;
-  font-size: 18px;
+  font-size: 16px;
   color: #131313;
 }
 
@@ -204,10 +206,15 @@ main > div {
 .circle {
   margin-bottom: 20px;
 
-  height: 70px;
-  width: 70px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
   background-color: #CD6C6F;
+}
+
+.habilidades-card p{
+  font-size: 14px;
+  color: #6D7280;
 }
 
 .habilidades-card:hover {
@@ -325,4 +332,73 @@ main > div {
 
   background: #fff;
   border: 2px solid #252525;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  height: 90vh;
+  background: url("./images/imagem-footer.jpg");
+  background-size: contain;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+footer > div {
+  height: 20vh;
+  width: 100%;
+}
+
+.footer-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  background-color: hsla(0, 0%, 100%, 0.705);
+  box-shadow: 0px -100px 100px hsla(0, 0%, 100%, 0.705);
+}
+
+.footer-contatos {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+
+  margin-bottom: 20px;
+  z-index: 10;
+}
+
+.footer-line {
+  height: 1px;
+  border-radius: 2px;
+  width: 80%;
+  background-color: #D2D5DA;
+}
+
+.footer-info ul{
+  display: flex;
+  gap: 24px;
+  list-style: none;
+
+}
+
+.footer-info ul a{
+  color: #7f8491;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+
+  transition: 0.3s;
+}
+
+.footer-info p{
+  font-size: 12px;
+  font-weight: 500;
+  color: #7f8491;
+}
+
+.footer-info ul a:hover{
+  color: #737781;
 }
