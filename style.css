@@ -31,7 +31,7 @@ nav {
 
   height: 60px;
   width: 60%;
-  min-width: 400px;
+  min-width: 360px;
   padding: 0 40px 0 40px;
 
   border: 1px solid #9B9B9B;
@@ -126,15 +126,12 @@ main > div {
 }
 
 #sobre {
-  height: 90vh;
-  padding: 0 20vw 0 20vw;
-
-  box-shadow: 0px -100px 100px #fff;
+  height: 82vh;
+  padding: 60px 20vw 0 20vw;
 
   display: flex;
   align-items: center;
   gap: 40px;
-
 }
 
 .sobre-info {
@@ -157,9 +154,10 @@ main > div {
 }
 
 .sobre-imagens img {
-  height: 330px;
-  width: 282px;
+  width: 7vw;
+  min-width: 240px;
   position: absolute;
+  border-radius: 5px;
 }
 
 .sobre-imagens img:first-child {
@@ -173,6 +171,7 @@ main > div {
 }
 
 #habilidades {
+  padding-top: 30px;
   margin: auto 20vw;
   height: 60vh;
 }
@@ -183,6 +182,8 @@ main > div {
 
 #habilidades > div{
   display: flex;
+  align-items: center;
+  width: 100%;
   margin-top: 120px;
   gap: 25px;
 
@@ -401,4 +402,83 @@ footer > div {
 
 .footer-info ul a:hover{
   color: #737781;
+}
+
+@media (max-width: 1280px) {
+  nav a {
+    font-size: 13px;
+    margin: 0;
+  }
+
+  #sobre {
+    height: 100%;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  .sobre-imagens {
+    display: none;
+  }
+
+  #habilidades {
+    align-items: center;
+    height: 100%;
+    margin-bottom: 40px;
+  }
+
+  #habilidades > div{
+    flex-direction: column;
+  }
+
+  .habilidades-card{
+    width: 40vw;
+    min-width: 250px;
+  }
+
+  #experiencia {
+    height: 100%;
+  }
+
+  .experiencia-cards {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .experiencia-card:first-of-type {
+    margin-bottom: 0;
+    align-self: center;
+  }
+  
+  .experiencia-card:last-of-type {
+    margin-top: 0;
+    align-self: inherit;
+  }
+
+  .experiencia-line {
+    display: none;
+  }
+
+  footer {
+    height: 55vh;
+  }
+
+}
+
+@media(max-width: 540px) {
+  nav {
+    min-width: 280px;
+    font-size: 11px;
+    margin: 0;
+    padding: 0;
+  }
+
+  #sobre p{
+    font-size: 13px;
+  }
+
+  footer {
+    height: 40vh;
+  }
 }
