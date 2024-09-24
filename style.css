@@ -142,7 +142,10 @@ main > div {
 .sobre-info p{
   margin-top: 25px;
   font-size: 16px;
-  color: #131313;
+  color: #303030;
+  text-align: justify;
+  margin-bottom: 20px;
+  text-indent: 40px;
 }
 
 .sobre-imagens {
