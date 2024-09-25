@@ -67,6 +67,7 @@ main {
   display: flex;
   align-items: center;
   height: calc(100vh - 90px);
+  min-height: 600px;
 
   background-image: url("./images/imagem-inicio.jpg");
   background-size: contain;
@@ -176,7 +177,7 @@ main > div {
 #habilidades {
   padding-top: 30px;
   margin: auto 20vw;
-  height: 60vh;
+  height: 100%;
 }
 
 #habilidades h2{
@@ -229,6 +230,7 @@ main > div {
 #experiencia {
   margin: auto 20vw;
   height: 70vh;
+  min-height: 500px;
 }
 
 #experiencia > div{
@@ -344,6 +346,7 @@ footer {
   justify-content: flex-end;
 
   height: 90vh;
+  min-height: 900px;
   background: url("./images/imagem-footer.jpg");
   background-size: contain;
   background-position: bottom;
@@ -363,6 +366,8 @@ footer > div {
   gap: 32px;
   background-color: hsla(0, 0%, 100%, 0.705);
   box-shadow: 0px -100px 100px hsla(0, 0%, 100%, 0.705);
+  padding-bottom: 30px;
+  padding-top: 30px;
 }
 
 .footer-contatos {
@@ -483,5 +488,11 @@ footer > div {
 
   footer {
     height: 40vh;
+  }
+}
+
+@media(max-height: 870px) {
+  .sobre-imagens {
+    display: none;
   }
 }
